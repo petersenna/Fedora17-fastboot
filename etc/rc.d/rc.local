@@ -1,0 +1,5 @@
+#!/bin/bash
+# Replace sda5 with your root partition, the partition
+# with your / contents
+
+ln -s /dev/sda5 /dev/root
