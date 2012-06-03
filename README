@@ -1,0 +1,3 @@
+See: http://www.harald-hoyer.de/personal/blog/fedora-17-boot-optimization-from-15-to-3-seconds
+
+The file etc/grub.d/05_custom_noinitrd is a configuration file for grub2 that creates entries without initrd for faster boot. The good thing is that the normal boot entries are still there so if the initrd less entries do not work, you can still boot your system
