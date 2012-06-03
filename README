@@ -4,4 +4,4 @@ The file etc/grub.d/05_custom_noinitrd is a configuration file for grub2 that cr
 
 This is good because it will still boot after Kernel update.
 
-It is necessary to create a link from your root partition to /dev/root. This is done with the file /etc/rc.d/rc.local. Remember to replace /dev/sda5 with your correct root partition.
+(Grub bug? - https://bugzilla.redhat.com/show_bug.cgi?id=737370) - It is necessary to create a link from your root partition to /dev/root. This is done with the file /etc/rc.d/rc.local. Remember to replace /dev/sda5 with your correct root partition.
