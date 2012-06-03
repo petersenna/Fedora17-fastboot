@@ -1,3 +1,7 @@
 See: http://www.harald-hoyer.de/personal/blog/fedora-17-boot-optimization-from-15-to-3-seconds
 
-The file etc/grub.d/05_custom_noinitrd is a configuration file for grub2 that creates entries without initrd for faster boot. The good thing is that the normal boot entries are still there so if the initrd less entries do not work, you can still boot your system
+The file etc/grub.d/05_custom_noinitrd is a configuration file for grub2 that creates entries without initrd for faster boot. The good thing is that the normal boot entries are still there so if the initrd less entries do not work, you can still boot your system.
+
+This is good because it will still boot after Kernel update.
+
+It is necessary to create a link from your root partition to /dev/root. This is done with the file /etc/rc.d/rc.local. Remember to replace /dev/sda5 with your correct root partition.
